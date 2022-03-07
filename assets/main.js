@@ -6,8 +6,6 @@ var puan=0;
             while(random1==random2){
                 random2=random(1,5);
             }
-            console.log(random1);
-            console.log(random2);
 
             for(i=1;i<=4;i++){
             renkdegis(i,random1);
@@ -21,7 +19,6 @@ var puan=0;
         }
         function renkdegisfarkli(random2){
             var rastgelekutu = random(1,5);
-            console.log("seçilen kutu: "+rastgelekutu);
             document.getElementById("kutu"+rastgelekutu).style.backgroundColor=renkler(random2);
 
         }
@@ -47,8 +44,6 @@ var puan=0;
                         dogrukutu=3;
                     }
                 }
-                console.log("dogrukutu"+dogrukutu);
-                console.log("basılankutu"+kutu);
             
             if(kutu==dogrukutu){
                 puan=puan+10;
